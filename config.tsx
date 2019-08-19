@@ -19,6 +19,8 @@ export const activate = (oni: Oni.Plugin.Api) => {
     oni.editors.activeEditor.neovim.command("nmap gw <Plug>(grammarous-move-to-info-window)")
     oni.editors.activeEditor.neovim.command("nmap gf <Plug>(grammarous-fixit)")
     oni.editors.activeEditor.neovim.command("nmap gr <Plug>(grammarous-remove-error)")
+    oni.editors.activeEditor.neovim.command("nmap gn <Plug>(grammarous-move-to-next-error)")
+    oni.editors.activeEditor.neovim.command("nmap gp <Plug>(grammarous-move-to-previous-error)")
 
     oni.editors.activeEditor.neovim.command("set tabstop=2")
     oni.editors.activeEditor.neovim.command("set shiftwidth=2")
